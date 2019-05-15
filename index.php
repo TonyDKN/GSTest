@@ -22,30 +22,36 @@
         <div class="row h-100 justify-content-center align-items-center">
             <div class="col-lg-4">
                 <form class="p-5" method="post" id="form">
+
+                    <div id="errName"></div>
                     <div class="md-form form-sm">
                         <i class="fa fa-user prefix grey-text"></i>
                         <input type="text" id="name" class="form-control form-control-sm">
                         <label for="name">name</label>
                     </div>
 
+                    <div id="errSurname"></div>
                     <div class="md-form form-sm">
                         <i class="fa fa-user prefix grey-text"></i>
                         <input type="text" id="surname" class="form-control form-control-sm">
                         <label for="surname">surname</label>
                     </div>
 
+                    <div id="errEmail"></div>
                     <div class="md-form form-sm">
                         <i class="fas fa-at prefix grey-text"></i>
                         <input type="text" id="email" class="form-control form-control-sm">
                         <label for="email">email</label>
                     </div>
 
+                    <div id="errPass1"></div>
                     <div class="md-form form-sm">
                         <i class="fas fa-unlock prefix grey-text"></i>
                         <input type="password" id="password1" class="form-control form-control-sm">
                         <label for="password1">password</label>
                     </div>
 
+                    <div id="errPass2"></div>
                     <div class="md-form form-sm">
                         <i class="fas fa-unlock prefix grey-text"></i>
                         <input type="password" id="password2" class="form-control form-control-sm">

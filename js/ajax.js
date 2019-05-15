@@ -9,22 +9,22 @@ $(document).on('submit', '#form', function (e) {
     $(".text-danger").remove();
 
     if (pass != confPass) {
-        $('#password2').after('<span class="text-danger" >password not confirm</span>');
+        $('#errpass2').before('<span class="text-danger" >password not confirm</span>');
     }
     if (name.length < 2) {
-        $('#name').after('<span class="text-danger">This field is required</span>');
+        $('#errName').before('<span class="text-danger">This field is required</span>');
     }
     if (surname.length < 2) {
-        $('#surname').after('<span class="text-danger">This field is required</span>');
+        $('#errSurname').before('<span class="text-danger">This field is required</span>');
     }
     if (email.length < 1) {
-        $('#email').after('<span class="text-danger">This field is required</span>');
+        $('#errEmail').before('<span class="text-danger">This field is required</span>');
     }
     if (pass.length < 2) {
-        $('#password1').after('<span class="text-danger">This field is required</span>');
+        $('#errPass1').before('<span class="text-danger">This field is required</span>');
     }
     if (confPass.length < 2) {
-        $('#password2').after('<span class="text-danger">This field is required<br /></span>');
+        $('#errPass2').before('<span class="text-danger">This field is required<br /></span>');
     }
     else {
         $.ajax({
