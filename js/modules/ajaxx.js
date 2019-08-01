@@ -60,6 +60,7 @@ $(document).on('submit', '#form', function (e) {
         onSuccess: function () {
             console.log('Валидация pass прошла успешно');
         }
+
     };
 
     var email = document.getElementbyId('email');
